@@ -1,0 +1,35 @@
+Project 1-2: Configure Microsoft Windows Sandbox  
+Estimated Time: 15 minutes 
+Objective: Given a scenario, implement host or application security solutions. 
+Description: A sandbox is an isolated “virtual” computer (called a “virtual machine”) within a “physical” computer. Anything done within a sandbox will impact only this virtual machine and not the underlying computer. And once you close the sandbox then nothing remains on your computer; when you launch the sandbox again it is just like starting over again. A sandbox is an ideal tool for downloading software and testing it to be sure that it contains no malware without impacting the physical computer. In this project, you will configure the Microsoft Windows 11 Sandbox. 
+
+Note: After configuring the Windows Sandbox, you can use it for the projects in this book if you do not want to download and install software on your physical computer.  
+
+1.	First check if your system has virtualization turned on. Right-click the Start icon in the taskbar and select Task Manager. 
+2.	Click the Performance tab. 
+3.	If necessary, click CPU in the left pane.  
+4.	Under "Virtualization" it must say "Enabled." If it says "Disabled" you will need to reboot and enter your computer’s BIOS or UEFI and turn on virtualization. Close Task Manager. 
+5.	Now enable Windows Sandbox. Click the magnifying glass icon in the taskbar.  
+6.	In the Windows search box, enter Windows Features. 
+7.	Click Turn Windows features on or off. 
+8.	Click the Windows Sandbox check box to turn on this feature. 
+9.	To launch Windows Sandbox, click Start and enter Windows Sandbox. A protected virtual machine sandbox that looks like another Windows instance will start, as shown in Figure 1-7. 
+
+Figure 1-7 Windows Sandbox
+10.	Explore the settings and default applications that come with the Windows Sandbox. 
+11.	You can download a program through the Microsoft Edge application in Windows Sandbox. (Edge is included within Windows Sandbox along with a handful of other Windows applications, including access to OneDrive.) Open Edge and go to www.google.com to download and install the Google Chrome browser in the Windows Sandbox.
+ 
+Note: You can also copy an executable file from your normal Windows environment and then paste it to the Windows Sandbox desktop to launch it. 
+
+12.	After the installation is complete, close the Windows Sandbox. 
+13.	Now relaunch the Windows Sandbox. What happened to Google Chrome? Why? 
+14.	Close all windows. 
+
+Note: There are several advantages to using the Windows Sandbox. It relies on the Microsoft hypervisor to run a separate kernel that isolates the Windows Sandbox from the host so that this makes it more efficient since it can take advantages of the Windows integrated kernel scheduler, smart memory management, and a virtual GPU. And once you close the Windows Sandbox, then nothing remains on your computer; when you launch Windows Sandbox again it is as clean as new. As an alternative to configuring the Windows Sandbox, you may create a virtual machine using Oracle VirtualBox software, which is a free application (www.virtualbox.org). However, you will need to acquire a licensed copy of Windows 11 to use in VirtualBox.  
+
+---
+
+
+# Sandbox Notes:
+Upon working with this hands-on activity, I discovered that although I have Virtualization enabled on my laptop, the Windows Sandbox feature is not available on my Windows Features. 
+This may be because of conflicting hypervisor issue as I have VMWare installed on my laptop already, disabling the feature within Windows Features itself. I am going to disable them and see if I can run the Virtual Sanbox
