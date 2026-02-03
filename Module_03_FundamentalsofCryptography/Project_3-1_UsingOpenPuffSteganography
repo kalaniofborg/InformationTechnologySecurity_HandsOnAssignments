@@ -1,0 +1,45 @@
+Project 3-1: Using OpenPuff Steganography 
+Estimated Time: 30 minutes 
+Objective: Explore steganography. 
+Description: Unlike cryptography, which scrambles a message so that it cannot be viewed, steganography hides the existence of the data. In this project, you will use OpenPuff to create a hidden message. 
+1.	Use your web browser to go to embeddedsw.net/OpenPuff_Steganography_Home.html. (It is not unusual for websites to change the location of where files are stored. If the URL above no longer works, open a search engine and search for “OpenPuff.”) 
+2.	Click Manual to open the OpenPuff manual. Save this file to your computer. Read through the manual to see the different features available. Return to the home page when finished.  
+3.	Click Download binary for Windows/Linux to download the program. A page will appear asking for payments; however, click the .ZIP link to download the program for evaluation without submitting a payment. 
+4.	Click Screenshot to view a screen capture of OpenPuff. Right-click this image and save it as OpenPuff_Screenshot.jpg on your computer. This will be the carrier file that will contain the secret message. 
+
+Note: For added security, OpenPuff allows a message to be spread across several carrier files.
+
+5.	Navigate to the location of the download and uncompress the OpenPuff zip file on your computer.  
+6.	Now create the secret message to be hidden. Open Notepad and enter This is a secret message.  
+7.	Save this file as Message.txt and close Notepad. 
+8.	Create a zip file from the Message file. Navigate to the location of this file through File Explorer and right-click it. 
+9.	Click Compress to ZIP file (Windows 11) or click Send to and select Compressed (zipped) folder (Windows 10) to create the zip file. 
+10.	Navigate to the OpenPuff folder and double-click OpenPuff.exe. 
+11.	Click Hide. 
+
+Note: Under Bit selection options, note the wide variety of file types that can be used to hide a message. 
+
+12.	Under (1), create three unrelated passwords and enter them into Cryptography (A), (B), and (C). Be sure that the Scrambing (C) password is long enough to turn the Password check bar from red to green. 
+13.	Under (2), locate the message to be hidden. Click Browse and navigate to the file Message.zip. Click Open. 
+14.	Under (3), select the carrier file. Click Add and navigate to OpenPuff_Screenshot.jpg.  
+15.	Click Hide Data!. 
+16.	Navigate to a different location from that of the carrier files and click OK. 
+17.	After the processing has completed, navigate to the location of the carrier file that contains the message and open the file. Can you detect anything different with the file now that it contains the message? 
+18.	Now uncover the message. Close the OpenPuff Data Hiding screen to return to the main menu. 
+19.	Click Unhide!. 
+20.	Enter the three passwords. 
+21.	Click Add Carriers and navigate to the location of Carrier1 that contains the hidden message. 
+22.	Click Unhide! and navigate to a location to deposit the hidden message. When it has finished processing, click OK. 
+23.	Click Done after reading the report. 
+24.	Go to the location of the hidden message and you will see Message.zip. 
+25.	Close OpenPuff and close all windows.
+
+---
+
+# Question 1: Can you detect anything different with the file now that it contains the message? 
+Yes, I noticed that the image file size is significantly higher than it should be for a standard image. It is at 503 KB 
+
+# Review:
+After I unhid the message within the photo, it came back into 2 parts, with the message zip as a separate folder, apart from the OpenPuff_Screenshot
+
+This was a very interesting hands-on lab that taught me how to hide a text within a photo. It is also mindful to keep attention to the size of images to uncover something that might be hidden. 
